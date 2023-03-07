@@ -9,7 +9,7 @@
 </head>
 <body>
   <h1>Undergraduate Life Form - Page 2</h1>
-  <form action="thankYou.html" method="post">
+  <form >
     <label for="question1">What do you enjoy most about being an undergraduate?</label>
     <br>
     <textarea id="question1" name="question1" rows="5" cols="50" required></textarea>
@@ -18,7 +18,14 @@
     <br>
     <textarea id="question2" name="question2" rows="5" cols="50" required></textarea>
     <br>
-    <input type="submit" value="Submit">
+    
+    <label>Do you like Iowa:</label>
+    <label for="yes"><input type="checkbox" id="yes" name="opinion[]" value="yes">Yes</label>
+    <label for="maybe"><input type="checkbox" id="maybe" name="opinion[]" value="maybe">Maybe</label>
+    <label for="sometimes"><input type="checkbox" id="sometimes" name="opinion[]" value="sometimes">Sometimes</label>
+    <label for="no"><input type="checkbox" id="no" name="opinion[]" value="no">No</label>
+    <br>
+    <button onclick="window.location.href='./thankYou.html';">Next Page </button>
   </form>
 </body>
 </html>
